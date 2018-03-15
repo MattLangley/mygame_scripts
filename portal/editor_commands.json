@@ -1,0 +1,230 @@
+{
+    "Test Scheduler Commands":
+    {
+        "access":
+        {
+            "game": true
+        },
+        "commands":
+        [
+            {
+                "display": "Trigger action",
+                "command": "triggerAction",
+                "buttonDisplay": "Trigger",
+                "args":
+                [
+                ]
+            },
+            {
+                "display": "Trigger Event",
+                "command": "triggerEvent",
+                "buttonDisplay": "Trigger",
+                "args":
+                [
+                ]
+            }
+        ]
+    },
+    "Announce":
+    {
+        "access":
+        {
+            "game": true
+        },
+        "commands":
+        [
+            {
+                "display": "Let the world know",
+                "command": "announcement",
+                "buttonDisplay": "Send",
+                "args":
+                [
+                    {"name" : "message", "display" : "message", "default" : "hello"}
+                ]
+            },
+            {
+                "display": "Send a Player a Message",
+                "command": "mailsend",
+                "buttonDisplay": "Send",
+                "args":
+                [
+                    {"name" : "pKey", "display" : "pKey", "default" : ""}
+                ]
+            }
+        ]
+    },
+    "Admin Commands":
+    {
+        "access":
+        {
+            "player": true
+        },
+        "commands":
+        [
+            {
+                "display": "Set Player Name",
+                "command": "setName",
+                "buttonDisplay": "Set",
+                "args":
+                [
+                    {"name": "name", "display":"name", "default":"New Name"}
+                ]
+            },
+            {
+                "display": "Session Len",
+                "command": "session",
+                "buttonDisplay": "Get",
+                "args": []
+            }
+        ]
+    },
+    "Player Commands":
+    {
+        "access":
+        {
+            "player": true
+        },
+        "commands":
+        [
+            {
+                "display": "Modify Ore",
+                "command": "modify_ore",
+                "buttonDisplay": "Modify",
+                "args":
+                [
+                    {"name": "arg0", "display":"amount", "default":"0"}
+                ]
+            },
+            {
+                "display": "Ban Player",
+                "command": "ban_player",
+                "buttonDisplay": "Ban",
+                "args": []
+            },
+            {
+                "display": "Block Player",
+                "command": "block_player",
+                "buttonDisplay": "Block",
+                "args": []
+            },
+            {
+                "display": "Change Player Status",
+                "command": "change_player_status",
+                "buttonDisplay": "Change",
+                "args":
+                [
+                    {"name": "status", "display":"status", "default":"active"}
+                ]
+            }
+        ]
+    },
+    "Mail Commands":
+    {
+        "access":
+        {
+            "player": true
+        },
+        "commands":
+        [
+            {
+                "display": "Send Mail",
+                "command": "send_mail",
+                "buttonDisplay": "Send",
+                "args":
+                [
+                    {"name": "subject", "display":"Subject", "default":"Subject"},
+                    {"name": "message", "display":"Message", "default":"Message"}
+                ]
+            },
+            {
+                "display": "Send Ore Reward",
+                "command": "send_mail_reward",
+                "buttonDisplay": "Send Reward",
+                "args":
+                [
+                    {"name": "subject", "display":"Subject", "default":"Gift"},
+                    {"name": "message", "display":"Message", "default":"Look what you got!"},
+                    {"name": "ore", "display":"Ore Count", "default":"10"}
+                ]
+            },
+            {
+                "display": "Process Mail",
+                "command": "mailprocess",
+                "buttonDisplay": "Process",
+                "args": [ ]
+            }
+        ]
+    },
+    "Bank Commands":
+    {
+        "access":
+        {
+            "player": true
+        },
+        "commands":
+        [
+            {
+                "display": "Credit Gems",
+                "command": "credit_gems",
+                "buttonDisplay": "Credit",
+                "args":
+                [
+                    {"name": "amt", "display":"Amount", "default":"25"}
+                ]
+            },
+            {
+                "display": "Debit Gems",
+                "command": "debit_gems",
+                "buttonDisplay": "Debit",
+                "args":
+                [
+                    {"name": "amt", "display":"Amount", "default":"25"}
+                ]
+            }
+        ]
+    },
+    "Test Tag 1":
+    {
+        "access":
+        {
+            "group":
+            {
+                "tags": ["testtag"]
+            }
+        },
+        "commands":
+        [
+            {
+                "display": "test",
+                "command": "testg",
+                "buttonDisplay": "Modify",
+                "args":
+                [
+                    {"name": "arg0", "display":"amount", "default":"0"}
+                ]
+            }
+        ]
+    },
+    "Test Tag 2":
+    {
+        "access":
+        {
+            "group":
+            {
+                "tags": ["testtag2"]
+            }
+        },
+        "commands":
+        [
+            {
+                "display": "test",
+                "command": "testg",
+                "buttonDisplay": "Modify",
+                "args":
+                [
+                    {"name": "arg0", "display":"amount", "default":"0"}
+                ]
+            }
+        ]
+    }
+}
